@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Техномарт - главная</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+<body>
+	<header class="main-header">
+		<div class="main-header-top">
+			<div class="top-menu-container">
+				<div class="top-menu">
+					<a href="#" class="main-logo">техномарт</a>
+					<form class="search-form" action="#" method="post">
+						<input type="text" id="search-field" name="search" placeholder="Поиск">
+						<button class="btn-search" type="submit"></button>
+					</form>
+					<a href="#" class="menu-bookmark">Закладки: 0</a>
+					<a href="#" class="menu-cart">Корзина: 0</a>
+					<button class="btn-order" type="button">Оформить заказ</button>
+				</div>
+			</div>
+		</div>
+		<div class="main-header-middle">
+			<div class="middle-menu-container">
+				<div class="middle-menu">
+					<p class="description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
+					<div class="contact-block">
+						<span class="phone">+7(812) 555-05-55</span>
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					</div>
+					<div class="login-block">
+						<a href="#" class="login">Войти</a>
+						<a href="#" class="registration">Регистрация</a>
+					</div>
+				</div>
+				<nav class="main-navigation">
+					<ul class="bottom-menu">
+						<li><a href="#" class="active">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main-container">
+		<section class="promo">
+			<div class="promo-materials">
+				<span>Материалы</span>
+				<a href="#" class="offer-btn">на любой вкус</a>
+			</div>
+			<div class="promo-tools">
+				<span>Инструменты</span>
+				<a href="#" class="offer-btn">на все случаи</a>
+			</div>
+			<div class="promo-technics">
+				<span>Техника</span>
+				<a href="#" class="offer-btn">для стройки</a>
+			</div>
+
+					<!--SLIDER-->
+			<div class="slider-window">
+				<input type="radio" id="switch-1" name="image" checked>
+				<input type="radio" id="switch-2" name="image">
+				<input type="radio" id="switch-3" name="image">
+
+				<div class="slide_img" id="slide-1">
+					<div class="item-block">
+						<h2>Дрели</h2>
+						<span>Соседям на радость!</span>
+					</div>
+					<img src="img/drills.jpg" alt="Дрели">
+					<label class="prev" for="switch-3"><span></span></label>
+					<label class="next" for="switch-2"><span></span></label>
+					<a class="btn" href="#">открыть каталог</a>
+				</div>
+
+				<div class="slide_img" id="slide-2">
+					<div class="item-block">
+						<h2>Перфораторы</h2>
+						<span>Настоящие мужские игрушки</span>
+					</div>
+					<img src="img/perforators.jpg" alt="Перфораторы">
+					<label class="prev" for="switch-1"><span></span></label>
+					<label class="next" for="switch-3"><span></span></label>
+					<a class="btn" href="#">открыть каталог</a>
+				</div>
+
+				<div class="slide_img" id="slide-3">
+					<div class="item-block">
+						<h2>Бензопилы</h2>
+						<span>Жёнам в помощь!</span>
+					</div>
+					<img src="img/chainsaw.jpg" alt="Безнопилы">
+					<label class="prev" for="switch-2"><span></span></label>
+					<label class="next" for="switch-1"><span></span></label>
+					<a class="btn" href="#">открыть каталог</a>
+				</div>
+
+				<div id="slide-switcher">
+					<label for="switch-1" class="dots" id="dot1"></label>
+					<label for="switch-2" class="dots" id="dot2"></label>
+					<label for="switch-3" class="dots" id="dot3"></label>
+				</div>
+			</div>
+			<div class="info-column">
+				<div class="promo-discount">
+					<span>Скидки 50%</span>
+				<a href="#" class="offer-btn">на 350 товаров</a>
+				</div>
+				<div class="promo-delivery">
+					<span>Доставка</span>
+				<a href="#" class="offer-btn">бесплатно</a>
+				</div>
+			</div>
+		</section>
+		<section class="popular popular-goods">
+			<div class="popular-title">
+				<h3>популярные товары</h3>
+				<a class="btn popular-btn" href="#">все популярные товары</a>
+			</div>
+			<div class="popular-item item-1">
+				<img width="180" height="160" src="img/bfg9000.jpg" alt="BFG9000">
+				<p>Перфоратор BOSCH BFG 9000</p>
+				<span class="discount">32500 Р.</span>
+				<a href="#" class="btn btn-price">25500 Р.</a>		
+			</div>
+			<div class="popular-item item-2">
+				<img width="180" height="160" src="img/bfg3000.jpg" alt="BFG9000">
+				<p>Перфоратор BOSCH BFG 3000</p>
+				<span class="discount">22500 Р.</span>
+				<a href="#" class="btn btn-price">15500 Р.</a>
+			</div>
+			<div class="popular-item item-3">
+				<img width="180" height="160" src="img/bfg6000.jpg" alt="BFG9000">
+				<p>Перфоратор BOSCH BFG 6000</p>
+				<span class="discount">30500 Р.</span>
+				<a href="#" class="btn btn-price">25500 Р.</a>
+			</div>
+			<div class="popular-item item-4">
+				<img width="180" height="160" src="img/bfg2000.jpg" alt="BFG9000">
+				<p>Перфоратор BOSCH BFG 2000</p>
+				<span class="discount"></span>
+				<a href="#" class="btn btn-price">12500 Р.</a>
+			</div>
+		</section>
+	</main>	
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+</body>
+</html>

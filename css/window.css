@@ -1,0 +1,183 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "Cuprum";
+  src: local("Cuprum"),
+  		url("../fonts/cuprum.woff") format("woff"),
+    	url("../fonts/cuprum.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+
+  font-family: "Cuprum";
+  src: 	local("Cuprum"),
+  		url("../fonts/cuprumbold.woff") format("woff"),
+       	url("../fonts/cuprumbold.woff2") format("woff2");
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 2.4rem;
+	color: #fff;
+	
+}
+
+h2,p,span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+div.container {
+	position: relative;
+	width: 62rem;
+	height: 26.6rem;
+	background-color: #1c1c1c;
+  	overflow: hidden;
+}
+
+.container input {
+	display: none;
+}
+
+.container .slide_img {
+	position: absolute;
+	width: 62rem;
+	height: 26.6rem;
+	z-index: -1;
+}
+
+.container .slide_img img {
+  width: inherit;
+  height: inherit;
+}
+
+.item-block {
+	position: absolute;
+	padding: 2.2rem	0 1.2rem 2.2rem;
+	width: 59.8rem;
+	background: rgba(34, 17, 16, 0.5);
+	top: 0;
+	left: 0;
+}
+
+.item-block h2 {
+	text-transform: uppercase;
+}
+
+.item-block span {
+	font-size: 1.8rem;
+}
+
+a.btn {
+	position: absolute;
+	display: inline-block;
+	top: 20rem;
+	left: 3rem;
+	width: 19.5rem;
+	line-height: 3.7rem;
+	background-color: #ee3643;
+	border-radius: 0.3rem;
+	text-align: center;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.slide_img label {
+	position: absolute;
+	display: inline-block;
+	top: 46%;
+	border: groove 5px;
+	z-index: 99;
+  	transition: .45s;
+  	cursor: pointer;
+}
+
+.slide_img label.prev {
+	left: 20px;
+	width: 2rem;
+	height: 2rem;
+	border-color: #fff transparent transparent #fff;
+	transform: rotate(-45deg);
+	cursor: pointer;
+}
+
+.slide_img label.next {
+	left: 570px;
+	width: 2rem;
+	height: 2rem;
+	border-color: transparent #fff #fff transparent;
+	transform: rotate(-45deg);
+	cursor: pointer;
+}
+
+#slide-switcher {
+	position: absolute;
+	font-size: 0;
+	text-align: center;
+	top: 21.5rem;
+	width: 62rem;
+	z-index: 99;
+}
+
+#slide-switcher .dots {
+	display: inline-block;
+	margin: 0.5rem;
+	width: 8px;
+	height: 8px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	background-color: #fff;
+	cursor: pointer;
+	transition: .2s;
+}
+
+#slide-switcher .dots:hover {
+  background: #ee3643;
+}
+
+#switch-1:checked ~ #slide-1,
+#switch-2:checked ~ #slide-2,
+#switch-3:checked ~ #slide-3 {
+  z-index: 9;
+  animation: scroll .5s ease-in-out;
+}
+
+#switch-1:checked ~ #slide-switcher #dot1 {
+  background: #ee3643;
+}
+
+#switch-2:checked ~ #slide-switcher #dot2 {
+  background: #ee3643;
+}
+
+#switch-3:checked ~ #slide-switcher #dot3 {
+  background: #ee3643;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
