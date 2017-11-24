@@ -637,12 +637,12 @@ a.btn {
 }
 
 /*--------GOODS------------------*/
-.popular.popular-goods {
+.popular {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 	justify-content: space-between;
-
+	margin-bottom: 2.1rem;
 }
 
 .popular-title {
@@ -671,22 +671,82 @@ a.btn {
 
 .popular-item {
 	display: flex;
+	position: relative;
 	align-items: center;
 	flex-direction: column;
-	width: 21.6rem;
+	width: 18rem;
+	padding: 1.5rem 1.9rem 2rem;
 	min-height: 31.6rem;
-	border: 2px solid #e5e5e5;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.7rem;
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+
+.popular-item p {
+	margin-top: auto;
+	font-size: 1.8rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.popular-item.item-4 p {
+	margin-bottom: auto;
 }
 
 .btn.btn-price {
-	margin-bottom: 2rem;
 	margin-top: auto;
 	width: 14rem;
-	background: linear-gradient(225deg, transparent 12px, red 12px),
-	linear-gradient(-45deg, transparent 12px, red 12px);
-	background-size: 50% 100%;
-	background-repeat: no-repeat;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.7rem;
+	background: linear-gradient(90deg, transparent, red 0) top left,
+                linear-gradient(-134deg, transparent 1.3rem, red 0) top right,
+                linear-gradient(-46deg, transparent 1.3rem, red 0) bottom right,
+                linear-gradient(90deg, transparent, red 0) bottom left;
+background-size: 50% 50%;
+background-repeat: no-repeat;
+}
 
+.popular-item .discount {
+	font-size: 1.8rem;
+	color: #999999;
+	text-transform: uppercase;
+	text-decoration:  line-through;
+}
+
+.popular-item.item-4::after {
+	position: absolute;
+	left: 15rem;
+	top: 0.6rem;
+	content: "new";
+	color: #fff;
+	font-family: "PT Sans Narrow";
+	font-size: 1.6rem;
+	line-height: 2.9rem;
+	text-align: center;
+	width: 10rem;
+	background: #ee3643;
+	transform: rotate(45deg);
+}
+
+a.brand {
+	display: flex;
+	width: 21.8rem;
+	border: 1px solid #e5e5e5;
+	min-height: 14.3rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.popular.popular-brands {
+	padding-bottom: 8.5rem;
+}
+
+.brand:not(.low-row) {
+	margin-bottom: 2.1rem;
 }
 
 
