@@ -782,7 +782,21 @@ p[class$="about"] {
 }
 
 .slider-block .slider-menu {
+	position: relative;
 	width: 24rem;
+	height: 28rem;
+	
+}
+
+.slider-block .slider-menu:before {
+	position: absolute;
+	content: "";
+	width: 1rem;
+	height: 27.9rem;
+	left: 100%;
+	top: -5rem;
+	margin-left: -1rem;
+	background: url(../img/controls-divider.png) no-repeat;
 }
 
 .slider-viewport {
@@ -827,6 +841,37 @@ h3.slider-title {
 .slide-credit {
 	background: url(../img/credit.png) 100% 25px no-repeat;
 }
+
+/*--------------SLIDER CONTROLS-------------*/
+.slider-block input {
+	display: none;
+}
+
+.slider-menu label {
+	display: block;
+	padding-left: 2.3rem;
+	font-size: 2.1rem;
+	color: #fff;
+	background-color: #32425c;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
+	line-height: 5.8rem;
+	cursor: pointer;
+}
+
+#delivery:checked ~ .slider-menu label[for="delivery"],
+#assurance:checked ~ .slider-menu label[for="assurance"],
+#credit:checked ~ .slider-menu label[for="credit"] {
+	background-color: #fff;
+	color: #32425c;
+	border-top: 1px solid #f9f9f9;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.slider-menu label:hover {
+	background-color: #293449;
+}
+
 
 
 

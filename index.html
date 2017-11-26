@@ -176,11 +176,14 @@
 						<p class="services-about">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 					</div>
 					<div class="slider-block">
-						<ul class="slider-menu">
-							<li><label for="delivery">доставка</label></li>
-							<li><label for="assurance">гарантия</label></li>
-							<li><label for="credit"></label>кредит</li>
-						</ul>
+						<input type="radio" id="delivery" name="toggle" checked>
+                		<input type="radio" id="assurance" name="toggle">
+                		<input type="radio" id="credit" name="toggle">
+						<div class="slider-menu">
+							<label for="delivery" active>Доставка</label>
+							<label for="assurance">Гарантия</label>
+							<label for="credit">Кредит</label>
+						</div>
 						<div class="slider-viewport">
 							<div class="slider-band">
 								<div class="slide-delivery">
