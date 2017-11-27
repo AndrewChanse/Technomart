@@ -891,6 +891,10 @@ h3.slider-title {
 	transform: translateX(-140rem);
 }
 
+.slider-band {
+	transition: transform 0.8s ease;
+}
+
 .about {
 	display: flex;
 }
