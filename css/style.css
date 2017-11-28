@@ -762,8 +762,9 @@ a.brand {
 
 /*--------------SERVICES------------*/
 .company.services {
-	margin-bottom: 5rem;
-	background: #f2f6f8;	
+	margin-bottom: 5.4rem;
+	background: #f2f6f8;
+	min-height: 52rem;	
 }
 
 .services .title-block {
@@ -772,6 +773,8 @@ a.brand {
 
 .title-block h3 {
 	color: #000;
+	line-height: 8.4rem;
+
 }
 
 p[class$="about"] {
@@ -779,11 +782,12 @@ p[class$="about"] {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 1.3rem;
 	line-height: 2.4rem;
+	padding-bottom: 3rem;
 }
 
 .slider-block {
 	display: flex;
-	padding-top: 6.8rem;
+	padding-top: 3.8rem;
 }
 
 .slider-block .slider-menu {
@@ -823,7 +827,7 @@ p[class$="about"] {
 }
 
 h3.slider-title {
-	margin-bottom: 2rem;
+	margin-bottom: 2.2rem;
 	font-size: 3.6rem;
 	line-height: 3.6rem;
 	text-transform: uppercase;
@@ -897,11 +901,56 @@ h3.slider-title {
 
 .about {
 	display: flex;
+	justify-content: space-between;
+	min-height: 39.5rem;
+}
+
+.about [class$="-about"] {
+	line-height: 2.2rem;
+	padding-bottom: 2.5rem;
+}
+
+.our-shipping .btn {
+	width: 22rem;
+	margin-top: auto;
+}
+
+.our-contacts .btn {
+	width: 30rem;
+	margin-top: auto;
 }
 
 [class*="our-"] {
 	display: flex;
 	flex-direction: column;
+}
+
+.our-shipping {
+	width: 54rem;
+}
+
+.partners li {
+	position: relative;
+	margin-top: auto;
+	padding-left: 3.6rem;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	margin-bottom: 2rem;
+}
+
+.partners li:before {
+	position: absolute;
+	content: "";
+	width: 2.5rem;
+	height: 0.2rem;
+	left: 0;
+	top: 50%;
+	background-color: #fb565a;
+}
+
+.map-link {
+	display: block;
+	padding-top: 0.8rem;
 }
 
 
