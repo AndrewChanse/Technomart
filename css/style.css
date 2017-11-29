@@ -1026,19 +1026,89 @@ a.footer-logo {
 }
 
 .lower-footer {
-	display: flex;
-	min-height: 10.7rem;
+	min-height: 7rem;
+	padding-top: 3.7rem;
 	background-color: #293449;
-	
 }
 
+.lower-footer-content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
 
+.copyright {
+	margin-right: auto;
+	width: 23rem;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	color: #fff;
+}
 
+.lower-footer-content .social {
+	width: 18rem;
+	font-size: 0;
+}
 
+.social a {
+	position: relative;
+	margin-right: 0.5rem;
+	display: inline-block;
+	color: #fff;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: #212a3a;
+}
 
+[class*="social-btn"]::before {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	font-family: "symbols-technomart";
+	color: #fff;
+	font-size: 1.8rem;
+}
 
+.btn-vk::before {
+	content: "\76";
+}
 
+.btn-fb::before {
+	content: "\66";
+	left: 35%;
+}
 
+.btn-inst::before {
+	content: "📷";
+	left: 32%;
+}
+
+.feedback {
+	width: 30rem;
+	margin-left: auto;
+}
+
+.feedback p {
+	display: inline-block;
+	margin-right: 5.5rem;
+	width: 13.9rem;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	color: #fff;
+}
+
+.feedback p:last-child {
+	width: 8.6rem;
+	margin-right: 0;
+}
+
+.feedback a {
+	display: block;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	color: #ffd180;
+}
 
 /*ICONIC STYLES*/
 [class^="icon-"]::before,
@@ -1061,9 +1131,9 @@ a.footer-logo {
 .icon-left::before { content: "\3c"; } /* "&lt;" */
 .icon-right::before { content: "\3e"; } /* "&gt;" */
 /*.icon-basket::before { content: "\62"; } /* "b" */
-.icon-facebook::before { content: "\66"; } /* "f" */
+/*.icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
-.icon-vk::before { content: "\76"; } /* "v" */
+/*.icon-vk::before { content: "\76"; } /* "v" */
 .icon-up::before { content: "\2c4"; } /* "˄" */
 .icon-down::before { content: "\2c5"; } /* "˅" */
 .icon-left-big::before { content: "\2190"; } /* "←" */
@@ -1081,7 +1151,7 @@ a.footer-logo {
 .icon-home::before { content: "🏠"; } /* "\1f3e0" */
 .icon-user::before { content: "👨"; } /* "\1f468" */
 /*.icon-phone::before { content: "📞"; } /* "\1f4de" */
-.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+/*.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 /*.icon-search::before { content: "🔍"; } /* "\1f50d" */
 /*.icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
