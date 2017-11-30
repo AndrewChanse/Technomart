@@ -193,6 +193,11 @@ a.menu-cart {
 background-color: #212a3a;
 }
 
+.menu-bookmark:active,
+.menu-cart:active {
+background-color: #161d29;
+}
+
 .search-form input {
 	padding-left: 4.8rem;
 	width: 22.2rem;
@@ -230,6 +235,14 @@ background-color: #212a3a;
 	font-size: 1.7rem;
 	line-height: 4.2rem;
 	cursor: pointer;
+}
+
+.btn-order:hover {
+	background: linear-gradient(to bottom, #63a63e, #518534);
+}
+
+.btn-order:active {
+	background: #518534;
 }
 
 .main-header-middle {
@@ -322,15 +335,37 @@ a.login::before {
   	text-align: center;
   	text-transform: none;
   	text-decoration: inherit;
-  	color: #b7bfc8;
+  	color: #32425c;
   	font-size: 2rem;
+  	opacity: 0.4;
   	font-style: normal;
   	font-variant: normal;
+}
+
+a.login:hover {
+	color: #ee3643;
+}
+
+a.login:hover::before {
+	opacity: 1;
 }
 
 a.registration {
 	width: 15rem;
 	text-align: center;
+}
+
+a.registration:hover {
+	color: #ee3643;
+}
+
+a.login:active,
+a.registration:active {
+	color: #c5c5c5;
+}
+
+a.login:active::before {
+	opacity: 0.4;
 }
 
 .main-navigation {
@@ -362,6 +397,11 @@ a.registration {
 
 .bottom-menu a:hover {
 	background-color: #293449;
+}
+
+.bottom-menu a:active {
+	background-color: #1d2739;
+	color: #a8abaf;
 }
 
 /*___________MAIN_____________*/
@@ -402,8 +442,16 @@ a.registration {
 	text-align: center;
 	line-height: 3.8rem;
 	width: 13.5rem;
-	background: #dda028;
+	background: rgba(70, 70, 70, 0.1);
 	border-radius: 0.3rem;
+}
+
+.offer-btn:hover {
+	background: rgba(70, 70, 70, 0.2);
+}
+
+.offer-btn:active {
+	background: rgba(70, 70, 70, 0.35);
 }
 
 .offer-btn:after {
@@ -444,9 +492,9 @@ a.registration {
 	margin: 0 auto;
 }
 
-.promo-tools .offer-btn {
+/*.promo-tools .offer-btn {
 	background: #429dc7;
-}
+}*/
 
 .promo-tools .offer-btn:after {
 	background-position: -56px 0;
@@ -461,9 +509,9 @@ a.registration {
 	
 }
 
-.promo-technics .offer-btn {
+/*.promo-technics .offer-btn {
 	background-color: #b76dbc;
-}
+}*/
 
 .promo-technics .offer-btn:after {
 	background-position: -156px 0;
@@ -534,6 +582,14 @@ a.btn {
 	font-size: 1.4rem;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+a.btn:hover:not(.btn-price) {
+	background-color: #ca2c37;
+}
+
+a.btn:active:not(.btn-price) {
+	background-color: #ba2732;
 }
 
 .slide_img label {
