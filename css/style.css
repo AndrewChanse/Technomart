@@ -787,10 +787,35 @@ a.btn:active:not(.btn-price) {
 }
 
 .purchase-overlay .buy-btn {
+	position: relative;
+	line-height: 3.8rem;
 	color: #fff;
-	line-height: 3.5rem;
 	background-color: #63a63e;
-	box-shadow: 0 0.3rem 0 0 #367315;
+	box-shadow: inset 0 -0.3rem 0 0 #367315;
+}
+
+.purchase-overlay .buy-btn::before {
+	position: absolute;
+	content: "\62";
+	left: 1.3rem;
+	top: -0.1rem;
+	font-family: "symbols-technomart";
+  	text-transform: none;
+  	font-size: 1.6rem;
+  	opacity: 0.4;
+}
+
+.purchase-overlay .buy-btn:hover {
+	background-color: #5fbb2d;
+}
+
+.purchase-overlay .buy-btn:active {
+	background-color:#518534;
+	box-shadow: none;
+}
+
+.purchase-overlay .buy-btn:hover::before {
+	opacity: 1;
 }
 
 .purchase-overlay .bookmark-btn {
@@ -800,6 +825,15 @@ a.btn:active:not(.btn-price) {
 	background-color: #fff;
 	border: 0.3rem solid #63a63e;
 	
+}
+
+.purchase-overlay .bookmark-btn:hover {
+	border: 0.3rem solid rgba(50, 66, 92);
+}
+
+.purchase-overlay .bookmark-btn:active {
+	color: rgba(50, 66, 92, 0.4);
+	border: 0.3rem solid rgba(50, 66, 92, 0.4);
 }
 
 .popular-item p {
@@ -865,6 +899,14 @@ a.brand {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+a.brand:hover {
+	box-shadow: 0 6px 15px 2px #aeb2ba;
+}
+
+a.brand:active {
+	box-shadow: 0 3px 7px 1px #babec4;
 }
 
 .popular.popular-brands {
