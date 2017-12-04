@@ -1317,6 +1317,108 @@ a.footer-logo {
 	box-shadow: none;
 }
 
+/*----------MODAL-FORM-----------*/
+#contact-form {
+	position: fixed;
+	overflow: auto;
+	left: 50%;
+	top: 50%;
+	margin-left: -31rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 46rem;
+	padding: 5rem 8rem 3.7rem;
+	background: linear-gradient(to top, #f1f1f1 11.2rem, #fff 11.3rem);
+	border-top: 0.7rem solid #ee3643;
+	box-shadow: 0 15px 25px 2px #5e5f5f;
+	z-index: 99;
+}
+
+[name*="exit-btn"] {
+	position: absolute;
+	left: 58.5rem;
+	top: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+[name*="exit-btn"]::before,
+[name*="exit-btn"]::after {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	content: "";
+	width: 2.5rem;
+	height: 0.5rem;
+	background-color: #ee3643;
+	transform: rotate(45deg);
+}
+
+[name*="exit-btn"]::after {
+	transform: rotate(-45deg);
+}
+
+.contact-form__labels {
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	margin-bottom: 0.8rem;
+}
+
+.contact-form__labels :first-child {
+	margin-right: 16.4rem;
+}
+
+[for*="contact-form"] {
+	cursor: pointer;
+}
+
+[name*="-field"] {
+	margin-right: auto;
+	padding-left: 1.4rem;
+	flex-basis: 20.2rem;
+	height: 3.4rem;
+	font-family: "PT Sans", Arial, sans-serif;
+	border: 2px solid #d7dcde;
+	border-radius: 2px;
+	margin-bottom: 1.8rem;
+}
+
+[name*="email-field"] {
+	margin-right: 0;
+}
+
+[for*="contact-form__letter-field"] {
+	flex-basis: 100%;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+[name*="letter"] {
+	flex-basis: 100%;
+	font-family: "PT Sans", Arial, sans-serif;
+	border: 2px solid #d7dcde;
+	border-radius: 0.3rem;
+	margin-bottom: 7.4rem;
+	padding-left: 1.2rem;
+	padding-top: 0.8rem;
+	resize: none;
+}
+
+[name="submit-btn"] {
+	width: 100%;
+	font-family: Cuprum, Arial, sans-serif;
+	font-size: 1.4rem;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 3.8rem;
+	background-color: #ee3643;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
 
 /*ICONIC STYLES*/
 [class^="icon-"]::before,
