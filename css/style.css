@@ -1318,21 +1318,25 @@ a.footer-logo {
 }
 
 /*----------MODAL-FORM-----------*/
-#contact-form {
+.contact-form {
 	position: fixed;
-	overflow: auto;
-	left: 50%;
-	top: 50%;
-	margin-left: -31rem;
-	display: flex;
+	display: none;
 	flex-direction: row;
 	flex-wrap: wrap;
+	overflow: auto;
+	left: 50%;
+	top: 40%;
+	margin-left: -31rem;
 	width: 46rem;
 	padding: 5rem 8rem 3.7rem;
 	background: linear-gradient(to top, #f1f1f1 11.2rem, #fff 11.3rem);
 	border-top: 0.7rem solid #ee3643;
 	box-shadow: 0 15px 25px 2px #5e5f5f;
 	z-index: 99;
+}
+
+.form-view {
+	display: flex;
 }
 
 [name*="exit-btn"] {
