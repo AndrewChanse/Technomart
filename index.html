@@ -286,18 +286,20 @@
 			</div>	
 		</div>	
 	</footer>
-	<form class="contact-form" method="post" action="#">
+	<div class="modal-window">
 		<button type="form-close" name="exit-btn"></button>
-		<div class="contact-form__labels">
-			<label for="contact-form__login-field">Ваше имя:</label>
-			<label for="contact-form__email-field">Ваш e-mail:</label>
-		</div>
-		<input name="login-field" type="text" id="contact-form__login-field" placeholder="Представьтесь, пожалуйста">
-		<input name="email-field" type="email" id="contact-form__email-field" placeholder="Для отправки ответа">
-		<label for="contact-form__letter-field">Текст письма:</label>
-		<textarea name="letter" id="contact-form__letter-field" rows="6" placeholder="В свободной форме"></textarea>
-		<button form="contact-form" type="submit" name="submit-btn">отправить</button>
-	</form>
+		<form class="contact-form window" method="post" action="www.technomart.ru">
+			<div class="contact-form__labels">
+				<label for="contact-form__login-field">Ваше имя:</label>
+				<label for="contact-form__email-field">Ваш e-mail:</label>
+			</div>
+			<input name="login-field" type="text" id="contact-form__login-field" placeholder="Представьтесь, пожалуйста">
+			<input name="email-field" type="email" id="contact-form__email-field" placeholder="Для отправки ответа">
+			<label for="contact-form__letter-field">Текст письма:</label>
+			<textarea name="letter" id="contact-form__letter-field" rows="6" placeholder="В свободной форме"></textarea>
+			<button type="submit" name="submit-btn">отправить</button>
+		</form>
+	</div>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </body>
 </html>
