@@ -20,10 +20,9 @@ if (storage) {
 });
 
 form.addEventListener("submit", function(event) {
-	event.preventDefault();
 	if (!login.value || !email.value) {
 		event.preventDefault();
-		console.log ("Нужно ввести логин и пароль!");
+		modal.classList.add("form-error");
 	}
 	else {
 		event.preventDefault();
@@ -35,12 +34,18 @@ form.addEventListener("submit", function(event) {
 close.addEventListener("click", function(event) {
 	event.preventDefault();
 	modal.classList.remove("form-view");
+		if (modal.classList.contains("form-error")) {
+		modal.classList.remove("form-error");
+	}
 });
 
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
-		if (modal.classList.contains("form-view")) {
+	if (modal.classList.contains("form-view")) {
 	modal.classList.remove("form-view");
+	}
+	if (modal.classList.contains("form-error")) {
+		modal.classList.remove("form-error");
 	}
 }
 });
