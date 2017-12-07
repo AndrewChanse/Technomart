@@ -1448,6 +1448,24 @@ a.footer-logo {
 	cursor: pointer;
 }
 
+.modal-content-map {
+	position: fixed;
+	display: block;
+	/*width: 94rem;
+	height: 44.6rem;*/
+	overflow: auto;
+	left: 50%;
+	top: 30%;
+	margin-left: -47rem;
+	box-shadow: 0 0 5px 4px #ccc;
+	z-index: 99;
+	resize: none;
+}
+
+.map-view {
+	display: block;
+}
+
 
 
 /*ICONIC STYLES*/
