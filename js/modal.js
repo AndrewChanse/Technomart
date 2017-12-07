@@ -22,8 +22,6 @@ if (storage) {
 form.addEventListener("submit", function(event) {
 	event.preventDefault();
 	if (!login.value || !email.value) {
-	console.log("Нужно ввести логин и пароль");
-	if (!login.value || !email.value) {
 		event.preventDefault();
 		console.log ("Нужно ввести логин и пароль!");
 	}
@@ -39,18 +37,10 @@ close.addEventListener("click", function(event) {
 	modal.classList.remove("form-view");
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 436edda58c34ca898e25f949c66ae4a0f0de2af4
 window.addEventListener("keydown", function(event) {
 	if (event.keyCode === 27) {
 		if (modal.classList.contains("form-view")) {
 	modal.classList.remove("form-view");
 	}
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 436edda58c34ca898e25f949c66ae4a0f0de2af4
 });
