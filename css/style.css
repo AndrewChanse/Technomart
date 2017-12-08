@@ -1450,9 +1450,7 @@ a.footer-logo {
 
 .modal-content-map {
 	position: fixed;
-	display: block;
-	/*width: 94rem;
-	height: 44.6rem;*/
+	display: none;
 	overflow: auto;
 	left: 50%;
 	top: 30%;
@@ -1464,6 +1462,33 @@ a.footer-logo {
 
 .map-view {
 	display: block;
+}
+
+[name*="map-close-btn"] {
+	position: absolute;
+	left: 90.2rem;
+	top: 1rem;
+	width: 2.8rem;
+	height: 2.8rem;
+	cursor: pointer;
+	background-color: #ccc;
+	border: 3px solid #fff;
+}
+
+[name*="map-close-btn"]::before,
+[name*="map-close-btn"]::after {
+	position: absolute;
+	left: -5%;
+	top: 40%;
+	content: "";
+	width: 2.5rem;
+	height: 0.5rem;
+	background-color: #ee3643;
+	transform: rotate(45deg);
+}
+
+[name*="map-close-btn"]::after {
+	transform: rotate(-45deg);
 }
 
 

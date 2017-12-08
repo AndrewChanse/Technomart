@@ -1,4 +1,7 @@
 var modal = document.querySelector(".modal-window");
+var mapcall = document.querySelector(".map-link");
+var google = document.querySelector(".modal-content-map");
+var mapclose = google.querySelector("[type=map-close]");
 var open = document.querySelector(".aulost-btn");
 var close = modal.querySelector("[name=exit-btn]");
 var form = document.querySelector(".contact-form");
@@ -49,3 +52,15 @@ window.addEventListener("keydown", function(event) {
 	}
 }
 });
+
+mapcall.addEventListener("click", function(event) {
+	event.preventDefault();
+	google.classList.add("map-view");
+});
+
+mapclose.addEventListener("click", function(event) {
+	event.preventDefault();
+	google.classList.remove("map-view");
+});
+
+
