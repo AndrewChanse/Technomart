@@ -42,17 +42,6 @@ close.addEventListener("click", function(event) {
 	}
 });
 
-window.addEventListener("keydown", function(event) {
-	if (event.keyCode === 27) {
-	if (modal.classList.contains("form-view")) {
-	modal.classList.remove("form-view");
-	}
-	if (modal.classList.contains("form-error")) {
-		modal.classList.remove("form-error");
-	}
-}
-});
-
 mapcall.addEventListener("click", function(event) {
 	event.preventDefault();
 	google.classList.add("map-view");
@@ -63,4 +52,16 @@ mapclose.addEventListener("click", function(event) {
 	google.classList.remove("map-view");
 });
 
-
+window.addEventListener("keydown", function(event) {
+	if (event.keyCode === 27) {
+	if (modal.classList.contains("form-view")) {
+	modal.classList.remove("form-view");
+	}
+	if (modal.classList.contains("form-error")) {
+		modal.classList.remove("form-error");
+	}
+	if (google.classList.contains("map-view")) {
+		google.classList.remove("map-view");
+	}
+}
+});
