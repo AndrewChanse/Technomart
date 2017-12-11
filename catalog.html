@@ -2,9 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Техномарт - главная</title>
-	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet"> -->
+	<title>Техномарт - каталог товаров</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
@@ -53,76 +51,6 @@
 		</div>
 	</header>
 	<main class="main-container">
-		<section class="promo">
-			<div class="promo-materials">
-				<span>Материалы</span>
-				<a href="#" class="offer-btn">на любой вкус</a>
-			</div>
-			<div class="promo-tools">
-				<span>Инструмент</span>
-				<a href="#" class="offer-btn">на все случаи</a>
-			</div>
-			<div class="promo-technics">
-				<span>Техника</span>
-				<a href="#" class="offer-btn">для стройки</a>
-			</div>
-
-					<!--SLIDER-->
-			<div class="slider-window">
-				<input type="radio" id="switch-1" name="image" checked>
-				<input type="radio" id="switch-2" name="image">
-				<input type="radio" id="switch-3" name="image">
-
-				<div class="slide_img" id="slide-1">
-					<div class="item-block">
-						<h2>Дрели</h2>
-						<span>Соседям на радость!</span>
-					</div>
-					<img src="img/drills.jpg" alt="Дрели">
-					<label class="prev" for="switch-3"><span></span></label>
-					<label class="next" for="switch-2"><span></span></label>
-					<a class="btn" href="#">открыть каталог</a>
-				</div>
-
-				<div class="slide_img" id="slide-2">
-					<div class="item-block">
-						<h2>Перфораторы</h2>
-						<span>Настоящие мужские игрушки</span>
-					</div>
-					<img src="img/perforators.jpg" alt="Перфораторы">
-					<label class="prev" for="switch-1"><span></span></label>
-					<label class="next" for="switch-3"><span></span></label>
-					<a class="btn" href="#">открыть каталог</a>
-				</div>
-
-				<div class="slide_img" id="slide-3">
-					<div class="item-block">
-						<h2>Бензопилы</h2>
-						<span>Жёнам в помощь!</span>
-					</div>
-					<img src="img/chainsaw.jpg" alt="Безнопилы">
-					<label class="prev" for="switch-2"><span></span></label>
-					<label class="next" for="switch-1"><span></span></label>
-					<a class="btn" href="#">открыть каталог</a>
-				</div>
-
-				<div id="slide-switcher">
-					<label for="switch-1" class="dots" id="dot1"></label>
-					<label for="switch-2" class="dots" id="dot2"></label>
-					<label for="switch-3" class="dots" id="dot3"></label>
-				</div>
-			</div>
-			<div class="info-column">
-				<div class="promo-discount">
-					<span>Скидки 50%</span>
-				<a href="#" class="offer-btn">на 350 товаров</a>
-				</div>
-				<div class="promo-delivery">
-					<span>Доставка</span>
-				<a href="#" class="offer-btn">бесплатно</a>
-				</div>
-			</div>
-		</section>
 		<section class="popular popular-goods">
 			<div class="popular-title">
 				<h3>популярные товары:</h3>
@@ -169,88 +97,9 @@
 				<a href="#" class="btn btn-price">12500 Р.</a>
 			</div>
 		</section>
-		<section class="popular popular-brands">
-			<div class="popular-title">
-				<h3>популярные производители:</h3>
-				<a class="btn popular-btn" href="#">все производители</a>
-			</div>
-			<a href="#" class="brand"><img width="151" height="96" src="img/bosch.jpg" alt="BOSCH"></a>
-			<a href="#" class="brand"><img width="151" height="96" src="img/makita.jpg" alt="Makita"></a>
-			<a href="#" class="brand"><img width="151" height="96" src="img/dewalt.jpg" alt="DeWalt"></a>
-			<a href="#" class="brand"><img width="190" height="96" src="img/interskol.jpg" alt="Интерскол"></a>
-			<a href="#" class="brand low-row"><img width="151" height="96" src="img/hitachi.jpg" alt="HITACHI"></a>
-			<a href="#" class="brand low-row"><img width="151" height="96" src="img/lg.jpg" alt="LG"></a>
-			<a href="#" class="brand low-row"><img width="151" height="96" src="img/aeg.jpg" alt="AEG"></a>
-			<a href="#" class="brand low-row"><img width="190" height="96" src="img/metabo.jpg" alt="metabo"></a>
-		</section>
 	</main>
-		<section class="company services">
-			<div class="services-container">
-				<div class="services">
-					<div class="title-block">
-						<h3 class="services-title">сервисы</h3>
-						<p class="services-about">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-					</div>
-					<div class="slider-block">
-						<input type="radio" id="delivery" name="toggle" checked>
-                		<input type="radio" id="assurance" name="toggle">
-                		<input type="radio" id="credit" name="toggle">
-						<div class="slider-menu">
-							<label for="delivery" active>Доставка</label>
-							<label for="assurance">Гарантия</label>
-							<label for="credit">Кредит</label>
-						</div>
-						<div class="slider-viewport">
-							<div class="slider-band">
-								<div class="slide-delivery">
-									<h3 class="slider-title">доставка</h3>
-									<p class="delivery-about">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-								</div>
-								<div class="slide-assurance">
-									<h3 class="slider-title">гарантия</h3>
-									<p class="assurance-about">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием,<br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
-								</div>
-								<div class="slide-credit">
-									<h3 class="slider-title">кредит</h3>
-									<p class="credit-about">Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p>
-									<a class="btn" href="#">отправить заявку</a>
-								</div>	
-							</div>
-						</div>
-					</div>		
-				</div>
-			</div>
-		</section>
-		<section class="company about">
-			<div class="about-container">
-				<div class="about">
-					<div class="about our-shipping">
-						<div class="title-block">
-							<h3 class="about-title">КОМПАНИЯ «Техномарт»</h3>
-							<p class="company-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-						</div>
-						<p class="shipping-about">Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
-						<ul class="partners">
-							<li>Деловые линии</li>
-							<li>Автотрейдинг</li>
-							<li>ЖелДорЭкспедиция</li>
-						</ul>
-						<a class="btn" href="#">Подробнее о компании</a>
-					</div>	
-					<div class="about our-contacts">
-						<div class="title-block">
-							<h3 class="contacts-title">контакты</h3>
-							<p class="contacts-about">Вы можете забрать товар сами,</br>заехав в наш офис:</p>
-						</div>
-						<a href="#" class="map-link">
-							<img src="img/map-link.jpg" width="300" height="158">
-						</a>
-						<a class="btn aulost-btn" href="#">Заблудились? напишите нам!</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- FOOTER -->
+		
+				<!-- FOOTER -->
 	<footer class="upper-footer">
 		<div class="footer-container">
 			<nav class="upper navigation">
@@ -300,10 +149,6 @@
 			<button type="submit" name="submit-btn">отправить</button>
 		</form>
 	</div>
-	<div class="modal-content-map">
-		<button type="map-close" name="map-close-btn"></button>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1512676379857" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>		
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <script src="js/modal.js" type="text/javascript"></script>
 </body>
