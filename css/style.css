@@ -367,6 +367,40 @@ a.login:active::before {
 	opacity: 0.4;
 }
 
+/*----------CATALOG STYLES---------*/
+.logout-block {
+	margin-left: auto;
+	font-size: 0;
+	width: 30rem;
+}
+
+.logout-block .user-btn {
+	width: 19.3rem;
+	padding-left: 4.7rem;
+	padding-right: 6rem;
+	margin-bottom: 0.7rem;
+	line-height: 4.5rem;
+	display: inline-block;
+	color: #000;
+	font-size: 2.1rem;
+	line-height: 4.5rem;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+[class*="personal-"] {
+	display: inline-block;
+	margin-left: 1.9rem;
+	padding-right: 1.9rem;
+	font-family: "Cuprum", Arial, sans-serif;
+	color: #32425c;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*-----------------------------------*/
+
 .main-navigation {
 	position: relative;
 	border-bottom: 0.5rem solid #293449;
