@@ -329,7 +329,6 @@ a.login::before {
 	left: 1.3rem;
 	top: 0.1rem;
 	display: inline-block;
-  	font-weight: normal;
   	font-family: "symbols-technomart";
   	text-align: center;
   	text-transform: none;
@@ -375,6 +374,7 @@ a.login:active::before {
 }
 
 .logout-block .user-btn {
+	position: relative;
 	width: 19.3rem;
 	padding-left: 4.7rem;
 	padding-right: 6rem;
@@ -389,6 +389,7 @@ a.login:active::before {
 }
 
 [class*="personal-"] {
+	position: relative;
 	display: inline-block;
 	margin-left: 1.9rem;
 	padding-right: 1.9rem;
@@ -399,6 +400,104 @@ a.login:active::before {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+.personal-orders::after {
+	position: absolute;
+	content: "";
+	left: 100%;
+	top: 45%;
+	width: 4px;
+	height: 4px;
+	border-radius: 100%;
+	background-color: #32425c;
+}
+
+.user-btn::before {
+	content: "👨";/* "\1f468" */
+	position: absolute;
+	left: 1.4rem;
+	top: 0rem;
+	font-weight: normal;
+  	font-family: "symbols-technomart";
+  	text-align: center;
+  	text-transform: none;
+  	text-decoration: inherit;
+  	color: #32425c;
+  	font-size: 2rem;
+  	opacity: 0.4;
+  	font-style: normal;
+  	font-variant: normal;
+}
+
+.user-btn::after {
+	content: "\2386";/* "⎆" */
+	position: absolute;
+	left: 27rem;
+	top: 0.1rem;
+	font-weight: normal;
+  	font-family: "symbols-technomart";
+  	text-align: center;
+  	text-transform: none;
+  	text-decoration: inherit;
+  	color: #32425c;
+  	font-size: 2.2rem;
+  	opacity: 0.4;
+  	font-style: normal;
+  	font-variant: normal;
+}
+
+.breadcrumbs__items {
+	font-size: 0;
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+	font-family: "PT Sans";
+	font-size: 1.3rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000;
+}
+
+[class*="breadcrumbs__link"] {
+	position: relative;
+	font-family: "PT Sans";
+	font-size: 1.3rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #000;
+	line-height: 5.9rem;
+	padding-right: 4rem;
+}
+
+[class*="breadcrumbs__link"]::after {
+	content: "";
+	position: absolute;
+	left: 100%;
+	margin-left: -26px;
+	top: 25%;
+	width: 8px;
+	height: 8px;
+	transform: rotate(45deg);
+	background: transparent;
+	border-top: 1px solid #c1c6ce;
+    border-right: 1px solid #c1c6ce;
+}
+
+.breadcrumbs__link--home::before {
+	content: "🏠"; /* "\1f3e0" */
+	font-weight: normal;
+  	font-family: "symbols-technomart";
+  	text-align: center;
+  	text-transform: none;
+  	text-decoration: inherit;
+  	color: #32425c;
+  	font-size: 1.8rem;
+  	opacity: 0.4;
+  	font-style: normal;
+  	font-variant: normal;
+}
+
 /*-----------------------------------*/
 
 .main-navigation {
@@ -1547,8 +1646,8 @@ a.footer-logo {
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
-.icon-home::before { content: "🏠"; } /* "\1f3e0" */
-.icon-user::before { content: "👨"; } /* "\1f468" */
+/*.icon-home::before { content: "🏠"; } /* "\1f3e0" */
+/*.icon-user::before { content: "👨"; } /* "\1f468" */
 /*.icon-phone::before { content: "📞"; } /* "\1f4de" */
 /*.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 /*.icon-search::before { content: "🔍"; } /* "\1f50d" */
