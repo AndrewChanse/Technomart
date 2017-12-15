@@ -76,6 +76,12 @@ button {
 	overflow: hidden;
 }
 
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
 .main-header-top {
 	background-color: #293449;
 }
@@ -1098,21 +1104,109 @@ a.brand:active {
 	flex-direction: column;
 	min-height: 74.6rem;
 	width: 22rem;
+	font-family: "PT Sans";
 	box-shadow: 0 0 0 1px tan;
 	background-color: rgba(218,255,239, 0.2);
 }
 
+.priceWindows {
+	display: flex;
+	justify-content: space-between;
+}
+
+[for="priceWindows__input"] {
+	align-self: center;
+}
+
 .priceWindows__input {
 	display: inline-block;
-	margin-left: 10px;
-	width: 80px;
+	width: 9.5rem;
 	height: 38px;
 	font: inherit;
+	font-size: 1.7rem;
 	text-align: center;
 	border: none;
 	border-radius: 5px;
-	background-color: #f1f1f1;
+	background-color: #f7f3ec;
 }
+
+.priceFilter {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-bottom: 2.5rem;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.priceFilter__filter {
+	display: inline-block;
+	flex-basis: 100%;
+	padding-left: 1.8rem;
+	font-size: 1.3rem;
+	line-height: 3.8rem;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+	border-radius: 0.3rem;
+}
+
+[class*="__select"] {
+	margin: 0;
+	font-size: 1.7rem;
+	line-height: 5.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.priceFilter__priceScale {
+	position: relative;
+	flex-basis: 100%;
+	min-height: 8rem;
+	margin-bottom: 0.9rem;
+	background-color: #f7f3ec;
+	border-radius: 0.3rem;
+}
+
+.fullScale {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	width: 160px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.fullScale__Range {
+	position: absolute;
+	padding: 0 2rem;
+	width: 8rem;
+	height: 0.2rem;
+	top: 0;
+	left: 0;
+	background-color: #00ca74;
+}
+
+.fullScale__Range::before,
+.fullScale__Range::after {
+	position: absolute;
+	content: "";
+	top: -8px;
+	width: 0.4rem;
+	height: 0.4rem;
+	background: #ababab;
+	border: 0.8rem solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0.3rem 1px 0px #d4d1cb;
+}
+
+.fullScale__Range::before {
+	left: -1rem;
+}
+
+.fullScale__Range::after {
+	left: 100%;
+}
+
+
 /*---------------------------------*/
 
 /*--------------SERVICES------------*/

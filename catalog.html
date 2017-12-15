@@ -70,22 +70,27 @@
 		<main class="shop">
 			<form class="shop__options">
 				<div class="priceFilter">
-					<span class="priceFilter__title">фильтр</span>
-					<h4 class="priceFilter__price">цена:</h4>
+					<span class="priceFilter__filter">фильтр:</span>
+					<h3 class="priceFilter__selectPrice">цена:</h3>
 					<div class="priceFilter__priceScale">
 						<div class="fullScale">
-							<span class="fullScale__Range">
-							</span>
-						</div>
-						<div class="priceWindows">
-							<input class="priceWindows__input" type="text" name="min" value="0">-
-							</input>
-							<label>
-								<input class="priceWindows__input" type="text" name="max" value="30000"></input>
-							</label>
+							<span class="fullScale__Range"></span>
 						</div>
 					</div>
+					<div class="priceWindows">
+						<input class="priceWindows__input" type="text" name="min" value="0"></input>
+						<label for="priceWindows__input">-</label>
+						<input class="priceWindows__input" type="text" name="max" value="30000"></input>
+					</div>
 				</div>
+				<fieldset class="сheckboxFilter">
+					<h3 class="сheckboxFilter__selectBrand">производители:</h3>
+						<label class="checkboxLabel">
+							<input type="checkbox" name="bosh" checked>
+							<span class="icon-check-off"></span>bosh
+						</label>
+				</fieldset>
+				<fieldset class="Radio"></fieldset>
 			</form>
 			
 		</main>
