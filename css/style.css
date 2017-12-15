@@ -1087,10 +1087,31 @@ a.brand:active {
 /*----------CATALOG STYLES---------*/
 .shop {
 	display: flex;
+	min-height: 120.2rem;
+	width: 100%;
+	box-shadow: 0 0 0 1px #ff92de;
+	background-color: rgba(255,237,241, 0.2);
 }
 
-.shop__selectColumn {
-	
+.shop__options {
+	display: flex;
+	flex-direction: column;
+	min-height: 74.6rem;
+	width: 22rem;
+	box-shadow: 0 0 0 1px tan;
+	background-color: rgba(218,255,239, 0.2);
+}
+
+.priceWindows__input {
+	display: inline-block;
+	margin-left: 10px;
+	width: 80px;
+	height: 38px;
+	font: inherit;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background-color: #f1f1f1;
 }
 /*---------------------------------*/
 
