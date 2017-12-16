@@ -1093,7 +1093,6 @@ a.brand:active {
 /*----------CATALOG STYLES---------*/
 .shop {
 	display: flex;
-	min-height: 120.2rem;
 	width: 100%;
 	box-shadow: 0 0 0 1px #ff92de;
 	background-color: rgba(255,237,241, 0.2);
@@ -1102,8 +1101,8 @@ a.brand:active {
 .shop__options {
 	display: flex;
 	flex-direction: column;
-	min-height: 74.6rem;
 	width: 22rem;
+	margin-right: 2rem;
 	font-family: "PT Sans";
 	box-shadow: 0 0 0 1px tan;
 	background-color: rgba(218,255,239, 0.2);
@@ -1196,6 +1195,7 @@ a.brand:active {
 	border: 0.8rem solid #fff;
 	border-radius: 50%;
 	box-shadow: 0 0.3rem 1px 0px #d4d1cb;
+	cursor: pointer;
 }
 
 .fullScale__Range::before {
@@ -1206,6 +1206,105 @@ a.brand:active {
 	left: 100%;
 }
 
+.сheckboxFilter {
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.checkboxLabel {
+	display: block;
+	margin-bottom: 2.2rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+}
+
+.checkboxLabel__iconCheck {
+	margin-right: 1.2rem;
+	font-family: "symbols-technomart";
+	font-size: 2.6rem;
+	vertical-align: middle;
+}
+
+[type*="checkbox"] {
+	display: none;
+}
+
+.checkboxLabel__iconCheck::before {
+	content: "\2610"; /* "☐" */
+}
+
+[type*="checkbox"]:checked + .checkboxLabel__iconCheck::before {
+	content: "\2611"; /* "☑" */
+	margin-right: -0.31rem;
+}
+
+/*-----*/
+
+.radioFilter {
+	margin-bottom: 6rem;
+}
+
+.radioLabel {
+	display: block;
+	margin-bottom: 2.2rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+}
+
+.radioLabel__radioCheck {
+	margin-right: 1.2rem;
+	font-family: "symbols-technomart";
+	font-size: 2.6rem;
+	vertical-align: top;
+}
+
+[type*="radio"] {
+	display: none;
+}
+
+.radioLabel__radioCheck::before {
+	content: "\25cb"; /* "○" */
+}
+
+[type*="radio"]:checked + .radioLabel__radioCheck::before {
+	content: "\25cf"; /* "●" */
+}
+
+.catalog-btn {
+	width: 13.8rem;
+	font-family: "PT Sans";
+	font-weight: normal;
+	font-size: 1.3rem;
+	line-height: 3.6rem;
+	text-transform: uppercase;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 0.3rem;
+}
+
+.catalog-window {
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.sorting-menu {
+	display: flex;
+	flex-basis: 100%;
+	margin-bottom: 2rem;
+	min-height: 3.8rem;
+	background-color: #f7f3ec;
+}
+
+
+.sorting-menu__title {
+	padding-left: 1.9rem;
+	font-family: "PT Sans";
+	text-transform: uppercase;
+}
 
 /*---------------------------------*/
 
@@ -1781,11 +1880,11 @@ a.footer-logo {
 .icon-logout::before { content: "\241b"; } /* "␛" */
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
 .icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-circle::before { content: "\25cb"; } /* "○" */
-.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+/*.icon-circle::before { content: "\25cb"; } /* "○" */
+/*.icon-circle-dot::before { content: "\25cf"; } /* "●" */
 .icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
+/*.icon-check-off::before { content: "\2610"; } /* "☐" */
+/*.icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 /*.icon-home::before { content: "🏠"; } /* "\1f3e0" */
 /*.icon-user::before { content: "👨"; } /* "\1f468" */
