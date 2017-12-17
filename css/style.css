@@ -886,7 +886,6 @@ a.btn:active:not(.btn-price) {
 	flex-wrap: wrap;
 	position: relative;
 	justify-content: space-between;
-	margin-bottom: 2.1rem;
 }
 
 .popular-title {
@@ -1000,7 +999,7 @@ a.btn:active:not(.btn-price) {
 }
 
 .purchase-overlay .bookmark-btn:hover {
-	border: 0.3rem solid rgba(50, 66, 92);
+	border: 0.3rem solid rgba(50, 66, 92, 1);
 }
 
 .purchase-overlay .bookmark-btn:active {
@@ -1094,8 +1093,8 @@ a.brand:active {
 .shop {
 	display: flex;
 	width: 100%;
-	box-shadow: 0 0 0 1px #ff92de;
-	background-color: rgba(255,237,241, 0.2);
+	/*box-shadow: 0 0 0 1px #ff92de;
+	background-color: rgba(255,237,241, 0.2);*/
 }
 
 .shop__options {
@@ -1104,8 +1103,8 @@ a.brand:active {
 	width: 22rem;
 	margin-right: 2rem;
 	font-family: "PT Sans";
-	box-shadow: 0 0 0 1px tan;
-	background-color: rgba(218,255,239, 0.2);
+	/*box-shadow: 0 0 0 1px tan;
+	background-color: rgba(218,255,239, 0.2);*/
 }
 
 .priceWindows {
@@ -1131,6 +1130,7 @@ a.brand:active {
 
 .priceFilter {
 	display: flex;
+	width: 22rem;
 	flex-direction: column;
 	justify-content: flex-start;
 	padding-bottom: 2.5rem;
@@ -1256,7 +1256,7 @@ a.brand:active {
 	margin-right: 1.2rem;
 	font-family: "symbols-technomart";
 	font-size: 2.6rem;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 [type*="radio"] {
@@ -1288,7 +1288,8 @@ a.brand:active {
 	flex-basis: 100%;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	justify-content: space-between;
+	
 }
 
 .sorting-menu {
@@ -1299,12 +1300,86 @@ a.brand:active {
 	background-color: #f7f3ec;
 }
 
-
 .sorting-menu__title {
 	padding-left: 1.9rem;
 	font-family: "PT Sans";
 	text-transform: uppercase;
 }
+
+[class*="item-"] {
+	margin-bottom: 2rem;
+}
+
+[class*="-flagged"]::after {
+	position: absolute;
+	left: 16rem;
+	top: 0.4rem;
+	content: "new";
+	color: #fff;
+	font-family: "PT Sans Narrow";
+	font-size: 1.6rem;
+	line-height: 2.9rem;
+	text-align: center;
+	width: 8rem;
+	background: linear-gradient(135deg, transparent 2rem, #ee3643 0) top left,
+                linear-gradient(225deg, transparent 2rem, #ee3643 0) top right;
+    background-size: 54% 100%;
+	background-repeat: no-repeat;
+	transform: rotate(45deg);
+}
+
+[class*="_unflagged"]::after {
+	display: none;
+}
+
+.catalog-paginator {
+	font-size: 0;
+	margin: 3.2rem 0 6rem 0;
+	text-align: center;
+}
+
+.catalog-paginator__current {
+	display: inline-block;
+	margin-right: 1rem;
+	width: 3.8rem;
+	color: #fff;
+	font-family: "PT Sans";
+	font-size: 1.3rem;
+	line-height: 3.8rem;
+	text-transform: uppercase;
+	background-color: #ee3643;
+}
+
+.catalog-paginator__page {
+	display: inline-block;
+	margin-right: 1rem;
+	width: 3.6rem;
+	color: #000;
+	font-family: "PT Sans";
+	font-size: 1.3rem;
+	line-height: 3.6rem;
+	text-transform: uppercase;
+	border: 1px solid #e5e5e5;
+	border-radius: 0.2rem;
+	background-color: #fff;
+}
+
+.catalog-paginator__next {
+	display: inline-block;
+	margin-right: 1rem;
+	width: 13.8rem;
+	color: #000;
+	font-family: "PT Sans";
+	font-size: 1.3rem;
+	line-height: 3.6rem;
+	text-transform: uppercase;
+	border: 1px solid #e5e5e5;
+	border-radius: 0.2rem;
+	background-color: #fff;
+}
+
+
+
 
 /*---------------------------------*/
 
