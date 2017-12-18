@@ -1295,15 +1295,67 @@ a.brand:active {
 .sorting-menu {
 	display: flex;
 	flex-basis: 100%;
+	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 2rem;
 	min-height: 3.8rem;
+	font-size: 0;
 	background-color: #f7f3ec;
 }
 
 .sorting-menu__title {
+	display: inline-block;
+	margin-right: 14rem;
 	padding-left: 1.9rem;
 	font-family: "PT Sans";
+	font-size: 1.3rem;
 	text-transform: uppercase;
+}
+
+[class*="sorting-menu__by"] {
+	display: inline-block;
+	margin-right: auto;
+	font-family: "PT Sans";
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	border-bottom:  1px dotted #ee3643;
+	color: #cbc8c2;
+}
+
+.sorting-menu__byPrice {
+	margin-right: auto;
+	color: #ee3643;
+	border: none;
+}
+
+.sorting-menu__up-down {
+	display: inline-block;
+	position: relative;
+	padding-right: 1.7rem;
+	width: 2.6rem;
+	height: 1rem;
+	background-color: red;
+}
+
+.sorting-menu__up-down::before,
+.sorting-menu__up-down::after	{
+	position: absolute;
+	top: -1rem;
+	font-family: "symbols-technomart";
+	/*color: #c6c2bd;*/
+	color: blue;
+	font-size: 2.6rem;
+
+}
+
+.sorting-menu__up-down::before {
+	content: "\25b2";/* "▲" */
+	left: 0%;
+}
+
+.sorting-menu__up-down::after {
+	content: "\25bc";/* "▼" */
+	left: 100%;
 }
 
 [class*="item-"] {
@@ -1953,8 +2005,8 @@ a.footer-logo {
 .icon-right-big::before { content: "\2192"; } /* "→" */
 /*.icon-login::before { content: "\2386"; } /* "⎆" */
 .icon-logout::before { content: "\241b"; } /* "␛" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+/*.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+/*.icon-down-dir::before { content: "\25bc"; } /* "▼" */
 /*.icon-circle::before { content: "\25cb"; } /* "○" */
 /*.icon-circle-dot::before { content: "\25cf"; } /* "●" */
 .icon-star::before { content: "\2605"; } /* "★" */
