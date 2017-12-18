@@ -1298,6 +1298,7 @@ a.brand:active {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 2rem;
+	padding: 0 1.8rem;
 	min-height: 3.8rem;
 	font-size: 0;
 	background-color: #f7f3ec;
@@ -1306,7 +1307,6 @@ a.brand:active {
 .sorting-menu__title {
 	display: inline-block;
 	margin-right: 14rem;
-	padding-left: 1.9rem;
 	font-family: "PT Sans";
 	font-size: 1.3rem;
 	text-transform: uppercase;
@@ -1323,39 +1323,45 @@ a.brand:active {
 }
 
 .sorting-menu__byPrice {
-	margin-right: auto;
+	margin-right: 7rem;
 	color: #ee3643;
 	border: none;
 }
 
 .sorting-menu__up-down {
+	position: relative;
+	width: 4.3rem;
 	display: inline-block;
 	position: relative;
-	padding-right: 1.7rem;
-	width: 2.6rem;
 	height: 1rem;
-	background-color: red;
 }
 
-.sorting-menu__up-down::before,
-.sorting-menu__up-down::after	{
+[class*="sorting-menu__up-down_"] {
 	position: absolute;
 	top: -1rem;
 	font-family: "symbols-technomart";
-	/*color: #c6c2bd;*/
-	color: blue;
+	color: #c6c2bd;
 	font-size: 2.6rem;
-
 }
 
-.sorting-menu__up-down::before {
+.sorting-menu__up-down_up::before {
+	position: absolute;
 	content: "\25b2";/* "▲" */
-	left: 0%;
+	left: 0;
+	color: #ee3643;
 }
 
-.sorting-menu__up-down::after {
+.sorting-menu__up-down_down::after {
+	position: absolute;
 	content: "\25bc";/* "▼" */
-	left: 100%;
+	color: #000;
+	opacity: 0.2;
+	left: 3rem;
+	cursor: pointer;
+}
+
+.sorting-menu__up-down_down:hover.sorting-menu__up-down_down::after {
+	opacity: 1;
 }
 
 [class*="item-"] {
