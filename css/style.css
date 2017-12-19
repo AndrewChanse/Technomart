@@ -74,6 +74,7 @@ button {
 	padding: 0;
 	border: none;
 	overflow: hidden;
+	outline: none;
 }
 
 fieldset {
@@ -404,6 +405,10 @@ a.login:active::before {
 	cursor: pointer;
 }
 
+.logout-block .user-btn:active {
+	color: #c6c6c6;
+}
+
 [class*="personal-"] {
 	position: relative;
 	display: inline-block;
@@ -415,6 +420,14 @@ a.login:active::before {
 	line-height: 1.8rem;
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+[class*="personal-"]:hover {
+	color: #ff2945;
+}
+
+[class*="personal-"]:active {
+	color: #c6c6c6;
 }
 
 .personal-orders::after {
@@ -440,7 +453,7 @@ a.login:active::before {
   	text-decoration: inherit;
   	color: #32425c;
   	font-size: 2rem;
-  	opacity: 0.4;
+  	opacity: 0.3;
   	font-style: normal;
   	font-variant: normal;
 }
@@ -457,9 +470,19 @@ a.login:active::before {
   	text-decoration: inherit;
   	color: #32425c;
   	font-size: 2.2rem;
-  	opacity: 0.4;
+  	opacity: 0.3;
   	font-style: normal;
   	font-variant: normal;
+}
+
+.user-btn:hover.user-btn::before, 
+.user-btn:hover.user-btn::after {
+	opacity: 1;
+}
+
+.user-btn:active.user-btn::before, 
+.user-btn:active.user-btn::after	{
+	color: #c6c6c6;
 }
 /*---------------------------------*/
 
@@ -1291,6 +1314,15 @@ a.brand:active {
 	background-color: #fff;
 	border: 1px solid #e5e5e5;
 	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+.catalog-btn:hover {
+	border: 1px solid #bdc5c7;
+}
+
+.catalog-btn:active {
+	border: 1px solid #ff3144;
 }
 
 .catalog-window {
@@ -1336,6 +1368,11 @@ a.brand:active {
 	text-transform: uppercase;
 	border-bottom:  1px dotted #ee3643;
 	color: #cbc8c2;
+}
+
+[class*="navigation__option-"]:not([class*="byPrice"]):hover {
+	color: #000;
+	border-bottom:  1px solid #ff3043;
 }
 
 .sorting-navigation__option-byPrice {
@@ -1418,7 +1455,7 @@ a.brand:active {
 	text-align: center;
 }
 
-.catalog-paginator__current {
+.catalog-paginator-current {
 	display: inline-block;
 	margin-right: 1rem;
 	width: 3.8rem;
@@ -1428,6 +1465,7 @@ a.brand:active {
 	line-height: 3.8rem;
 	text-transform: uppercase;
 	background-color: #ee3643;
+	border-radius: 0.2rem;
 }
 
 .catalog-paginator__page {
@@ -1444,7 +1482,7 @@ a.brand:active {
 	background-color: #fff;
 }
 
-.catalog-paginator__next {
+.catalog-paginator__page-next {
 	display: inline-block;
 	margin-right: 1rem;
 	width: 13.8rem;
@@ -1458,7 +1496,14 @@ a.brand:active {
 	background-color: #fff;
 }
 
+[class*="catalog-paginator__page"]:hover {
+	border: 1px solid #bdc5c7;
+}
 
+
+[class*="catalog-paginator__page"]:active {
+	border: 1px solid #ff3144;
+}
 
 
 /*---------------------------------*/
