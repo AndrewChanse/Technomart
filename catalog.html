@@ -12,7 +12,7 @@
 		<div class="main-header-top">
 			<div class="top-menu-container">
 				<div class="top-menu">
-					<a href="#" class="main-logo">техномарт</a>
+					<a href="#" class="logo main-logo">техномарт</a>
 					<form class="search-form" action="#" method="post">
 						<input type="text" id="search-field" name="search" placeholder="Поиск">
 						<button class="btn-search" type="submit"></button>
@@ -122,9 +122,17 @@
 			<section class="catalog-window">
 				<div class="catalog sorting-menu">
 					<span class="sorting-menu__title">сортировка:</span>
-					<a href="#" class="sorting-menu__byPrice">по цене</a>
-					<a href="#" class="sorting-menu__byType">по типу</a>
-					<a href="#" class="sorting-menu__byFeature">по функционалу</a>
+					<ul class="sorting-navigation">
+						<li class="sorting-navigation__option">
+							<a href="#" class="sorting-navigation__option-byPrice">по цене</a>
+						</li>
+						<li class="sorting-navigation__option">
+							<a href="#" class="sorting-navigation__option-byTypee">по типу</a>
+						</li>
+						<li class="sorting-navigation__option">
+							<a href="#" class="sorting-navigation__option-byFeature">по функционалу</a>
+						</li>
+					</ul>
 					<span class="sorting-menu__up-down">
 						<a href="#" class="sorting-menu__up-down_up"></a>
 						<a href="#" class="sorting-menu__up-down_down"></a>
@@ -234,7 +242,7 @@
 	<footer class="upper-footer">
 		<div class="footer-container">
 			<nav class="upper navigation">
-				<a class="footer-logo" href="#">техномарт</a>
+				<a class="logo footer-logo" href="#">техномарт</a>
 				<a href="#">Компания</a>
 				<a href="#">Новости</a>
 				<a href="#">Каталог</a>

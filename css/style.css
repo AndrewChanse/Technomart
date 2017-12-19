@@ -122,6 +122,16 @@ a.main-logo {
 	box-shadow: 0 0.5rem 0 rgba(181, 41, 51, 1);
 }
 
+.main-logo:hover {
+	background-color: #ca2c37;
+	box-shadow: 0 0.5rem 0 rgba(154, 33, 42, 1);
+}
+
+.main-logo:active {
+	background-color: #ba2732;
+	box-shadow: 0 0.5rem 0 rgba(142, 30, 38, 1);
+}
+
 a[class^="menu-"] {
 	position: relative;
 	padding-left: 5rem;
@@ -1292,6 +1302,7 @@ a.brand:active {
 	
 }
 
+/*-----------sorting menu----------*/
 .sorting-menu {
 	display: flex;
 	flex-basis: 100%;
@@ -1306,15 +1317,20 @@ a.brand:active {
 
 .sorting-menu__title {
 	display: inline-block;
-	margin-right: 14rem;
+	margin-right: 10rem;
 	font-family: "PT Sans";
 	font-size: 1.3rem;
 	text-transform: uppercase;
 }
 
-[class*="sorting-menu__by"] {
+.sorting-navigation__option {
 	display: inline-block;
-	margin-right: auto;
+	width: 11.8rem;
+	margin-right: 2px;
+}
+
+[class*="navigation__option-"] {
+	display: inline-block;
 	font-family: "PT Sans";
 	font-size: 1.3rem;
 	text-transform: uppercase;
@@ -1322,10 +1338,10 @@ a.brand:active {
 	color: #cbc8c2;
 }
 
-.sorting-menu__byPrice {
-	margin-right: 7rem;
+.sorting-navigation__option-byPrice {
 	color: #ee3643;
 	border: none;
+	cursor: default;
 }
 
 .sorting-menu__up-down {
@@ -1349,6 +1365,7 @@ a.brand:active {
 	content: "\25b2";/* "▲" */
 	left: 0;
 	color: #ee3643;
+	cursor: default;
 }
 
 .sorting-menu__up-down_down::after {
@@ -1363,6 +1380,11 @@ a.brand:active {
 .sorting-menu__up-down_down:hover.sorting-menu__up-down_down::after {
 	opacity: 1;
 }
+
+/*-----------sorting menu----------*/
+
+
+/*------------------------------------*/
 
 [class*="item-"] {
 	margin-bottom: 2rem;
@@ -1661,6 +1683,16 @@ a.footer-logo {
 	line-height: 6.8rem;
 	background-color: #ee3643;
 	box-shadow: inset 0 -0.5rem 0 0 rgba(181, 41, 51, 1);
+}
+
+.footer-logo:hover {
+	background-color: #ca2c37;
+	box-shadow: inset 0 -0.5rem 0 0 rgba(154, 33, 42, 1);
+}
+
+.footer-logo:active {
+	background-color: #ba2732;
+	box-shadow: inset 0 -0.5rem 0 0 rgba(142, 30, 38, 1);
 }
 
 .upper.navigation a:not(:first-child) {
