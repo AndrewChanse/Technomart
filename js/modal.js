@@ -1,13 +1,15 @@
+// contact us
 var modal = document.querySelector(".modal-window");
-var mapcall = document.querySelector(".map-link");
-var google = document.querySelector(".modal-content-map");
-var mapclose = google.querySelector("[type=map-close]");
 var open = document.querySelector(".aulost-btn");
 var close = modal.querySelector("[name=exit-btn]");
 var form = document.querySelector(".contact-form");
 var login = modal.querySelector("[name=login-field]");
 var email = modal.querySelector("[name=email-field]");
-var form = document.querySelector(".contact-form");
+// googlemap
+var mapcall = document.querySelector(".map-link");
+var google = document.querySelector(".modal-content-map");
+var mapclose = google.querySelector("[type=map-close]");
+// 
 var storage = localStorage.getItem("login");
 
 open.addEventListener("click", function(event) {
