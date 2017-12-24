@@ -1,7 +1,20 @@
-var cartMessageCall = document.querySelector(".buy-btn");
-var cartPopup = document.querySelector(".cartMessage");
+var buy = document.querySelectorAll(".buy-btn");
+var cartpopup = document.querySelector(".cartMessage");
+var menucart = document.querySelector(".menu-cart");
+var buyclose = document.querySelector("[type=message-close]");
 
-cartMessageCall.addEventListener("click", function(event) {
+[].forEach.call(buy,function(a){
+	a.addEventListener("click",function(a){
+		a.preventDefault(),
+		cartpopup.classList.add("message-open"),
+		menucart.classList.add("menu-cart-added")
+})});
+
+buyclose.addEventListener("click", function(event){
 	event.preventDefault();
-	cartPopup.classList.add("message-open");
+	cartpopup.classList.remove("message-open");
 });
+
+
+
+
